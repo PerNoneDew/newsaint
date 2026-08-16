@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbars globally while preserving scroll functionality */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Paper-style underline inputs for the Student Health Record Form */
+.paper-input {
+  display: inline-block;
+  flex: 1;
+  min-width: 60px;
+  padding: 1px 4px;
+  border: none;
+  border-bottom: 1px solid #1e293b;
+  background: transparent;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0f172a;
+  outline: none;
+  resize: vertical;
+  line-height: 1.4;
+}
+.paper-input:focus {
+  border-bottom-color: #0d9488;
+  border-bottom-width: 2px;
+}
+.paper-input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Paper sheet container for the Student Health Record Form */
+.paper-sheet {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+}
